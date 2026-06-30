@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SkyElite Airlines</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f8f8f8;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:#6D1F3B;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+nav{
+background:white;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+nav a{
+text-decoration:none;
+margin:18px;
+color:#6D1F3B;
+font-weight:bold;
+}
+
+.hero{
+padding:70px 20px;
+text-align:center;
+background:#fdf7f8;
+}
+
+.hero h1{
+font-size:42px;
+color:#6D1F3B;
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+}
+
+.container{
+width:90%;
+margin:auto;
+padding:40px 0;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.card h2{
+color:#6D1F3B;
+margin-bottom:15px;
+}
+
+.price{
+font-size:28px;
+font-weight:bold;
+color:#8B0000;
+margin:15px 0;
+}
+
+ul{
+margin-left:20px;
+}
+
+button{
+background:#6D1F3B;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:6px;
+cursor:pointer;
+font-size:16px;
+margin-top:15px;
+}
+
+button:hover{
+background:#8B2E52;
+}
+
+.section-title{
+text-align:center;
+font-size:34px;
+color:#6D1F3B;
+margin-bottom:30px;
+}
+
+.offer{
+background:#fff4f6;
+padding:30px;
+border-left:6px solid #6D1F3B;
+margin-bottom:25px;
+border-radius:8px;
+}
+
+form{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+footer{
+background:#6D1F3B;
+color:white;
+padding:30px;
+text-align:center;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>✈ SkyElite Airlines</h1>
+
+<p>Luxury • Comfort • Global Connectivity</p>
+
+</header>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Flights</a>
+<a href="#">Book Ticket</a>
+<a href="#">Offers</a>
+<a href="#">Facilities</a>
+<a href="#">Contact</a>
+
+</nav>
+
+<section class="hero">
+
+<h1>Book Your Journey With Confidence</h1>
+
+<p>Serving International Students, Families, Local Residents and VIP Leaders.</p>
+
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Travel Classes</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h2>Economy Class</h2>
+
+<div class="price">Starting from ₹4,999</div>
+
+<ul>
+
+<li>Comfortable Seating</li>
+
+<li>Complimentary Refreshments</li>
+
+<li>Cabin Baggage Included</li>
+
+<li>Affordable Fare</li>
+
+<li>Ideal for Students & Families</li>
+
+</ul>
+
+<button>Book Economy</button>
+
+</div>
+
+<div class="card">
+
+<h2>Business Class</h2>
+
+<div class="price">Starting from ₹15,999</div>
+
+<ul>
+
+<li>Luxury Recliner Seats</li>
+
+<li>Priority Check-in</li>
+
+<li>Premium Meals</li>
+
+<li>VIP Lounge Access</li>
+
+<li>Extra Baggage Allowance</li>
+
+</ul>
+
+<button>Book Business</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<h2 class="section-title">Special Offers</h2>
+
+<div class="offer">
+
+<ul>
+
+<li>🎓 Students - Up to <strong>25% Discount</strong></li>
+
+<li>🎂 Birthday Special - Up to <strong>20% Discount</strong></li>
+
+<li>👴 Senior Citizens - Up to <strong>25% Discount</strong></li>
+
+<li>🏖 Vacation Season Offers - Up to <strong>15% Discount</strong></li>
+
+<li>💳 Secure Online Payment Available</li>
+
+<li>🏢 Tickets can also be booked Offline at the Airport Counter</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<h2 class="section-title">Book Your Ticket</h2>
+
+<form>
+
+<input type="text" placeholder="Passenger Name" required>
+
+<input type="email" placeholder="Email Address">
+
+<input type="tel" placeholder="Phone Number">
+
+<input type="text" placeholder="Departure City">
+
+<input type="text" placeholder="Destination">
+
+<input type="date">
+
+<select>
+
+<option>Select Class</option>
+
+<option>Economy Class</option>
+
+<option>Business Class</option>
+
+</select>
+
+<select>
+
+<option>Payment Method</option>
+
+<option>UPI</option>
+
+<option>Credit Card</option>
+
+<option>Debit Card</option>
+
+<option>Net Banking</option>
+
+</select>
+
+<button type="submit">Proceed to Payment</button>
+
+</form>
+
+</div>
+
+<div class="container">
+
+<h2 class="section-title">Airport Facilities</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h2>🚖 Airport Taxi</h2>
+
+<p>24×7 airport taxi services with comfortable rides to and from the airport.</p>
+
+</div>
+
+<div class="card">
+
+<h2>☕ Cafeteria</h2>
+
+<p>Fresh meals, coffee, snacks and beverages available throughout the day.</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎫 Offline Ticket Counter</h2>
+
+<p>Passengers can conveniently book or modify tickets directly at the airport.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h2>SkyElite Airlines</h2>
+
+<p><strong>Airport Office</strong></p>
+
+<p>Meenambakkam, Chennai, Tamil Nadu, India</p>
+
+<p>📞 Phone: +91 44 2256 1234</p>
+
+<p>📧 Email: support@skyeliteairlines.com</p>
+
+<p>Open 24 Hours | Online & Airport Ticket Booking Available</p>
+
+<br>
+
+<p>© 2026 SkyElite Airlines. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
